@@ -1,0 +1,295 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.header-text p {
+    font-size: 1.2em;
+}
+
+/* Navigation Styling */
+nav {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: transparent;
+    padding: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #444;
+    color: white;
+    padding: 14px 20px;
+    font-size: 1.1em;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.dropbtn:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1em;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+/* Portfolio dropdown under Home */
+.dropdown-sub {
+    position: relative;
+    display: inline-block;
+}
+
+.sub-dropbtn {
+    background-color: #444;
+    color: white;
+    padding: 14px 20px;
+    font-size: 1.1em;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.sub-dropbtn:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+.sub-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.sub-dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1em;
+}
+
+.sub-dropdown-content a:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+/* Show the dropdown menu */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-sub:hover .sub-dropdown-content {
+    display: block;
+}
+
+/* Section Styling */
+section {
+    margin-top: 80px; /* To avoid overlap with fixed navigation */
+    padding: 40px;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Portfolio Gallery Styling */
+.portfolio-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+}
+
+.more-photos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px;
+}
+.more-photos {
+    display: flex;
+    overflow-x: auto; /* Allows horizontal scrolling if needed */
+    gap: 10px; /* Adjust space between images */
+}
+
+.portfolio-img {
+    width: 100px; /* Adjust the width for smaller images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+}
+
+
+.portfolio-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-img:hover {
+    transform: scale(1.05);
+}
+
+/* More Button Styling */
+.more-btn {
+    background-color: #d4df73;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.more-btn:hover {
+    background-color: #ddd;
+    color: #c3d83e;
+}
+
+/* Footer Styling */
+footer {
+    background-color:#73cad0;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+/* Contact Section Styles */
+#contact {
+    background-color: #ffffff; /* Light background for contrast */
+    color: #333;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 50px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+#contact h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+#contact p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    color: #555;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact label {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#contact button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+#contact button:hover {
+    background-color: #0056b3;
+}
+
+#contact .success-message {
+    color: green;
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+}

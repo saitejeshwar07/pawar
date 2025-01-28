@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Photography Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="photop/WhatsApp Image 2025-01-27 at 01.25.56_1f0eb653.jpg" alt="Photographer's Image" class="header-photo">
+            <div class="header-text">
+                <h1>𝑷𝒂𝒘𝒂𝒓 𝑷𝒉𝒐𝒕𝒐𝒈𝒓𝒂𝒑𝒉𝒚</h1>
+                <p>Photography is not creating memories,It is Capturing moments</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation with Home dropdown and Portfolio sub-links -->
+    <nav>
+        <div class="dropdown">
+            <button class="dropbtn">Home</button>
+            <div class="dropdown-content">
+                <a href="#home">Home</a>
+                <a href="#about1">About</a>
+                <!-- Portfolio dropdown under Home -->
+                <div class="dropdown-sub">
+                    <button class="sub-dropbtn">Gallery</button>
+                    <div class="sub-dropdown-content">
+                        <a href="#photo1">Udaipur</a>
+                        <a href="#photo2">Photo 2</a>
+                        <a href="#photo3">Photo 3</a>
+                        <a href="#photo4">Photo 4</a>
+                        <a href="#photo5">Photo 5</a>
+                        <a href="#photo6">Photo 6</a>
+                    </div>
+                </div>
+                <a href="#about">Editz</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝑴𝒚 𝑬𝒚𝒆 </h2>
+        <p>"Welcome to my world through the lens, where every moment is a masterpiece waiting to be captured. Step into my gallery and explore timeless memories brought to life."</p>
+    </section>
+
+    <!-- Portfolio Sections (each with 6 photos in a 2x3 grid layout) -->
+    <section id="about1">
+        <h2>𝑨𝒃𝒐𝒖𝒕 𝒎𝒆</h2>
+        <p>I am a passionate photographer and a B.Tech first-year student at IIT Gandhinagar, eager to capture the beauty of life through my lens. Photography allows me to tell stories, evoke emotions, and preserve moments that matter. I specialize in portraits, landscapes, and event photography while constantly exploring new styles and techniques to expand my creative horizons.</p>
+    </section>
+    <!-- Photo 1 -->
+    <section id="photo1">
+        <h2>Udaipur</h2>
+        <div class="portfolio-gallery">
+            <img src="photop/IMG-20250124-WA0038.jpg" alt="Photo 1-1" class="portfolio-img">
+            <img src="photop/IMG-20250124-WA0048.jpg" alt="Photo 1-2" class="portfolio-img">
+            <img src="photop/IMG-20250127-WA0008.jpg" alt="Photo 1-3" class="portfolio-img">
+            <img src="photop/IMG-20250127-WA0005.jpg" alt="Photo 1-4" class="portfolio-img">
+            <img src="photop/IMG-20250127-WA0006.jpg" alt="Photo 1-5" class="portfolio-img">
+            <img src="photop/IMG-20250127-WA0007.jpg" alt="Photo 1-6" class="portfolio-img">
+            <img src="photop/IMG-20250127-WA0010.jpg" alt="Photo 1-7" class="portfolio-img">
+            <img src="photop/IMG-20250127-WA0009.jpg" alt="Photo 1-8" class="portfolio-img">
+            <img src="photop/IMG-20250127-WA0015.jpg" alt="Photo 1-9" class="portfolio-img">
+        </div>
+        <div class="more-photos" style="display: none;">
+            <div class="text-overlay"><br>I recently had a wonderful two-day trip to Udaipur. The city was absolutely beautiful and filled with unforgettable experiences. I started by renting a bike, which made exploring the city so much fun. My first stop was the magnificent City Palace, followed by a visit to the serene Lake Pichola. Both places were breathtaking and truly showcased Udaipur's charm.</br>
+                <br>Next, I embarked on a journey to **Bahubali Hill**, which involved a short trek of about 2-3 kilometers. The trek was refreshing, and the view from the top was stunning. To add to the experience, I enjoyed a hot bowl of Maggi at the summit, which felt perfect in that setting.</br>
+                <br>After that, I headed to the **ropeway station** to try the cable car ride. It was an amazing experience, offering panoramic views of the city. Finally, I spent some time in the **local market**, exploring shops filled with beautiful handicrafts, traditional dresses, and other unique items.</br>
+                <br>Every moment of the trip was delightful, and Udaipur's vibrant culture and scenic beauty made it truly memorable.</br></div> 
+        </div>
+        <button class="more-btn" onclick="toggleMore('photo1')">see</button>
+    </section>
+
+    <!-- Photo 2 -->
+    <section id="photo2">
+        <h2>Whispers of the Dark</h2>
+        <div class="portfolio-gallery">
+            <img src="photop/IMG-20250127-WA0028.jpg" alt="Photo 2-1" class="portfolio-img">
+            <img src="photop/IMG-20250127-WA0029.jpg" alt="Photo 2-2" class="portfolio-img">
+            <img src="photop/IMG-20250127-WA0032.jpg" alt="Photo 2-3" class="portfolio-img">
+            <img src="photop/IMG-20250127-WA0035.jpg" alt="Photo 2-4" class="portfolio-img">
+            <img src="photop/IMG-20250127-WA0031.jpg" alt="Photo 2-5" class="portfolio-img">
+            <img src="photop/IMG-20250127-WA0043.jpg" alt="Photo 2-6" class="portfolio-img">
+        </div>
+        <div class="more-photos" style="display: none;">
+           <!-- <img src="photo2-7.jpg" alt="Photo 2-7" class="portfolio-img">
+            <img src="photo2-8.jpg" alt="Photo 2-8" class="portfolio-img">
+            <img src="photo2-9.jpg" alt="Photo 2-9" class="portfolio-img">
+            Add as many as needed -->
+        </div>
+        <button class="more-btn" onclick="toggleMore('photo2')">More...</button>
+    </section>
+
+    <!-- Photo 3 -->
+    <section id="photo3">
+        <h2>Explore</h2>
+        <div class="portfolio-gallery">
+            <img src="photop/IMG-20250127-WA0042.jpg" alt="Photo 3-1" class="portfolio-img">
+            <img src="photop/IMG-20250127-WA0040.jpg" alt="Photo 3-2" class="portfolio-img">
+            <img src="photop/IMG-20250127-WA0036.jpg" alt="Photo 3-3" class="portfolio-img">
+            <img src="photop/IMG-20250127-WA0039.jpg" alt="Photo 3-4" class="portfolio-img">
+            <img src="photop/IMG-20250127-WA0033.jpg" alt="Photo 3-5" class="portfolio-img">
+            <img src="photop/IMG-20250127-WA0030.jpg" alt="Photo 3-6" class="portfolio-img">
+        </div>
+        <div class="more-photos" style="display: none;">
+            <img src="photo2-7.jpg" alt="Photo 2-7" class="portfolio-img">
+            <img src="photo2-8.jpg" alt="Photo 2-8" class="portfolio-img">
+            <img src="photo2-9.jpg" alt="Photo 2-9" class="portfolio-img">
+            <!-- Add as many as needed -->
+        </div>
+        <button class="more-btn" onclick="toggleMore('photo3')">More...</button>
+    </section>
+
+    <!-- Photo 4 -->
+    <section id="photo4">
+        <h2>Photo 4</h2>
+        <div class="portfolio-gallery">
+            <img src="photo4-1.jpg" alt="Photo 4-1" class="portfolio-img">
+            <img src="photo4-2.jpg" alt="Photo 4-2" class="portfolio-img">
+            <img src="photo4-3.jpg" alt="Photo 4-3" class="portfolio-img">
+            <img src="photo4-4.jpg" alt="Photo 4-4" class="portfolio-img">
+            <img src="photo4-5.jpg" alt="Photo 4-5" class="portfolio-img">
+            <img src="photo4-6.jpg" alt="Photo 4-6" class="portfolio-img">
+        </div>
+        <div class="more-photos" style="display: none;">
+            <img src="photo2-7.jpg" alt="Photo 2-7" class="portfolio-img">
+            <img src="photo2-8.jpg" alt="Photo 2-8" class="portfolio-img">
+            <img src="photo2-9.jpg" alt="Photo 2-9" class="portfolio-img">
+            <!-- Add as many as needed -->
+        </div>
+        <button class="more-btn" onclick="toggleMore('photo4')">More...</button>
+    </section>
+
+    <!-- Photo 5 -->
+    <section id="photo5">
+        <h2>Photo 5</h2>
+        <div class="portfolio-gallery">
+            <img src="photo5-1.jpg" alt="Photo 5-1" class="portfolio-img">
+            <img src="photo5-2.jpg" alt="Photo 5-2" class="portfolio-img">
+            <img src="photo5-3.jpg" alt="Photo 5-3" class="portfolio-img">
+            <img src="photo5-4.jpg" alt="Photo 5-4" class="portfolio-img">
+            <img src="photo5-5.jpg" alt="Photo 5-5" class="portfolio-img">
+            <img src="photo5-6.jpg" alt="Photo 5-6" class="portfolio-img">
+        </div>
+        <div class="more-photos" style="display: none;">
+            <img src="photo2-7.jpg" alt="Photo 2-7" class="portfolio-img">
+            <img src="photo2-8.jpg" alt="Photo 2-8" class="portfolio-img">
+            <img src="photo2-9.jpg" alt="Photo 2-9" class="portfolio-img">
+            <!-- Add as many as needed -->
+        </div>
+        <button class="more-btn" onclick="toggleMore('photo5')">More...</button>
+    </section>
+
+    <!-- Photo 6 -->
+    <section id="photo6">
+        <h2>Photo 6</h2>
+        <div class="portfolio-gallery">
+            <img src="photo6-1.jpg" alt="Photo 6-1" class="portfolio-img">
+            <img src="photo6-2.jpg" alt="Photo 6-2" class="portfolio-img">
+            <img src="photo6-3.jpg" alt="Photo 6-3" class="portfolio-img">
+            <img src="photo6-4.jpg" alt="Photo 6-4" class="portfolio-img">
+            <img src="photo6-5.jpg" alt="Photo 6-5" class="portfolio-img">
+            <img src="photo6-6.jpg" alt="Photo 6-6" class="portfolio-img">
+        </div>
+        <div class="more-photos" style="display: none;">
+            <img src="photo2-7.jpg" alt="Photo 2-7" class="portfolio-img">
+            <img src="photo2-8.jpg" alt="Photo 2-8" class="portfolio-img">
+            <img src="photo2-9.jpg" alt="Photo 2-9" class="portfolio-img">
+            <!-- Add as many as needed -->
+        </div>
+        <button class="more-btn" onclick="toggleMore('photo6')">More...</button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>Skills</h2>
+        <p><br>Adobe</br>
+            <br>Photoshop</br>
+            <br>illustrator</br>
+            <br>lightroom</br>
+            <br>premiere pro</br>
+            <br>after effects</br>
+            <br>snapseed</br>
+        
+        </p>
+    </section>
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Contact:</label>
+        <textarea id="message" name="message" rows="1" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
