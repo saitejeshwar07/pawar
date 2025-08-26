@@ -1,0 +1,118 @@
+/* General */
+body {
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+h1, p {
+  text-align: center;
+}
+
+/* Intro page */
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+.intro-photo {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid red;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  margin-top: 20px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* Gallery page */
+.gallery-page {
+  display: none;
+  padding: 20px;
+}
+
+.gallery-title {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.lightbox-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80vh;
+}
+
+.caption {
+  text-align: center;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  color: #fff;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
